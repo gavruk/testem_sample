@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "testem": "git@github.com:testem/testem.git#29da50359346b3fe67b19fe9b78bb373941c7f32",
+    "mocha": "^2.3.4"
+  },
+  "scripts": {
+    "test": "node ./node_modules/testem/testem.js",
+    "test-ci": "node ./node_modules/testem/testem.js ci -P 10"
+  },
+  "license": "MIT"
+}

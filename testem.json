@@ -1,0 +1,20 @@
+{
+  "watch_files": [
+    "./lib/*",
+    "./lib/**/*",
+    "./tests/*",
+    "./tests/**/*"
+  ],
+  "launchers": {
+    "Node1": {
+      "command": "mocha -R tap tests/* tests/**/*",
+      "protocol": "tap"
+    },
+    "Node2": {
+      "command": "mocha -R tap tests/* tests/**/*",
+      "protocol": "tap"
+    }
+  },
+  "launch_in_dev": [ "Node1", "Node2" ],
+  "launch_in_ci": [ "Node1", "Node2" ]
+}
